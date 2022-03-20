@@ -8,14 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=13;
+		nextID=40;
+	};
+	class MarkerIDProvider
+	{
+		nextID=3;
 	};
 	class Camera
 	{
-		pos[]={7747.8745,132.89604,8037.9243};
-		dir[]={0.022782242,-0.98738414,0.15669574};
-		up[]={0.14206368,0.15834318,0.97711074};
-		aside[]={0.98959535,1.8626451e-009,-0.14387883};
+		pos[]={9739.4326,67.307175,4105.0371};
+		dir[]={0.6542837,-0.44198546,0.61364621};
+		up[]={0.32238206,0.89702219,0.30235896};
+		aside[]={0.68409252,0,-0.72939515};
 	};
 };
 binarizationWanted=0;
@@ -24,37 +28,16 @@ addons[]=
 {
 	"CUP_CAStructures_Mil",
 	"CUP_Misc3_Config",
-	"CUP_WarfareBuildings",
-	"CUP_StandaloneTerrains_Core_Faction",
-	"A3_Characters_F",
-	"ace_explosives",
-	"A3_Weapons_F_Rifles_MX",
-	"A3_Weapons_F_Acc",
-	"ace_realisticnames",
-	"ace_scopes",
-	"ace_laserpointer",
-	"A3_Weapons_F",
-	"ace_smallarms",
-	"ace_ballistics",
-	"A3_Weapons_F_Pistols_P07",
-	"ace_goggles",
-	"ace_nightvision",
-	"ace_hearing",
-	"ace_attach",
-	"ace_chemlights",
-	"A3_Weapons_F_Items",
-	"ace_medical_engine",
-	"ace_medical_treatment",
-	"A3_Characters_F_Mark",
-	"A3_Weapons_F_Explosives",
-	"CUP_Weapons_Put",
-	"A3_Weapons_F_Orange"
+	"A3_Modules_F_Intel",
+	"JDG_carrier",
+	"A3_Characters_F_Jets",
+	"A3_Air_F_Jets_Plane_Fighter_01"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=21;
+		items=6;
 		class Item0
 		{
 			className="CUP_CAStructures_Mil";
@@ -67,128 +50,28 @@ class AddonsMetaData
 		};
 		class Item2
 		{
-			className="CUP_WarfareBuildings";
-			name="CUP_WarfareBuildings";
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 		class Item3
 		{
-			className="CUP_StandaloneTerrains_Core_Faction";
-			name="CUP_StandaloneTerrains_Core_Faction";
+			className="JDG_carrier";
+			name="JDG_carrier";
+			author="JDog, Odyseus, TeTeT";
 		};
 		class Item4
 		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
+			className="A3_Characters_F_Jets";
+			name="Arma 3 Jets - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
 		class Item5
 		{
-			className="ace_explosives";
-			name="ACE3 - Explosives";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item6
-		{
-			className="A3_Weapons_F";
-			name="Arma 3 Alpha - Weapons and Accessories";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item7
-		{
-			className="ace_scopes";
-			name="ACE3 - Scopes";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item8
-		{
-			className="ace_laserpointer";
-			name="ACE3 - Laser Pointer";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item9
-		{
-			className="ace_smallarms";
-			name="ACE3 - Small Arms";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item10
-		{
-			className="ace_ballistics";
-			name="ACE3 - Ballistics";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item11
-		{
-			className="ace_goggles";
-			name="ACE3 - Goggles";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item12
-		{
-			className="ace_nightvision";
-			name="ACE3 - Night Vision";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item13
-		{
-			className="ace_hearing";
-			name="ACE3 - Hearing";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item14
-		{
-			className="ace_attach";
-			name="ACE3 - Attach";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item15
-		{
-			className="ace_chemlights";
-			name="ace_chemlights";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item16
-		{
-			className="ace_medical_engine";
-			name="ACE3 - Medical Engine";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item17
-		{
-			className="ace_medical_treatment";
-			name="ACE3 - Medical Treatment";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item18
-		{
-			className="A3_Characters_F_Mark";
-			name="Arma 3 Marksmen - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item19
-		{
-			className="CUP_Weapons_Put";
-			name="CUP_Weapons_Put";
-		};
-		class Item20
-		{
-			className="A3_Weapons_F_Orange";
-			name="Arma 3 Orange - Weapons and Accessories";
+			className="A3_Air_F_Jets";
+			name="Arma 3 Jets - Aircraft";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -196,8 +79,7 @@ class AddonsMetaData
 };
 dlcs[]=
 {
-	"Mark",
-	"CUP_Weapons"
+	"Jets"
 };
 randomSeed=12082271;
 class ScenarioData
@@ -227,7 +109,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=8;
+		items=9;
 		class Item0
 		{
 			dataType="Object";
@@ -268,23 +150,6 @@ class Mission
 		};
 		class Item2
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={7675.4121,45.795712,8180.3921};
-			};
-			side="Empty";
-			class Attributes
-			{
-				health=0.011459741;
-				name="bat3";
-			};
-			id=2;
-			type="Gue_WarfareBBarracks";
-			atlOffset=0.35900116;
-		};
-		class Item3
-		{
 			dataType="Trigger";
 			position[]={7811.062,1.1184382,8131.0259};
 			angle=0.38035953;
@@ -300,248 +165,7 @@ class Mission
 			type="EmptyDetectorAreaR50";
 			atlOffset=0.00045704842;
 		};
-		class Item4
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7788.5391,3.2318909,8131.0176};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						isPlayer=1;
-						class Inventory
-						{
-							class primaryWeapon
-							{
-								name="arifle_MXC_Holo_pointer_F";
-								optics="optic_Holosight";
-								flashlight="acc_pointer_IR";
-								firemode="arifle_MXC_Holo_pointer_F:Single";
-								class primaryMuzzleMag
-								{
-									name="30Rnd_65x39_caseless_mag";
-									ammoLeft=30;
-								};
-							};
-							class handgun
-							{
-								name="hgun_P07_F";
-								class primaryMuzzleMag
-								{
-									name="16Rnd_9x21_Mag";
-									ammoLeft=17;
-								};
-							};
-							class uniform
-							{
-								typeName="U_B_CombatUniform_mcam";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=2;
-									class Item0
-									{
-										name="30Rnd_65x39_caseless_mag";
-										count=1;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="Chemlight_green";
-										count=1;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=3;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=1;
-									};
-									class Item1
-									{
-										name="ACE_Clacker";
-										count=1;
-									};
-									class Item2
-									{
-										name="ACE_DefusalKit";
-										count=1;
-									};
-								};
-							};
-							class vest
-							{
-								typeName="V_PlateCarrierGL_rgr";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=7;
-									class Item0
-									{
-										name="30Rnd_65x39_caseless_mag";
-										count=4;
-										ammoLeft=30;
-									};
-									class Item1
-									{
-										name="16Rnd_9x21_Mag";
-										count=2;
-										ammoLeft=17;
-									};
-									class Item2
-									{
-										name="APERSMine_Range_Mag";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="HandGrenade";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item4
-									{
-										name="SmokeShell";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item5
-									{
-										name="SmokeShellGreen";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item6
-									{
-										name="Chemlight_green";
-										count=1;
-										ammoLeft=1;
-									};
-								};
-							};
-							class backpack
-							{
-								typeName="B_Kitbag_rgr_Exp";
-								isBackpack=1;
-								class MagazineCargo
-								{
-									items=5;
-									class Item0
-									{
-										name="APERSBoundingMine_Range_Mag";
-										count=3;
-										ammoLeft=1;
-									};
-									class Item1
-									{
-										name="ClaymoreDirectionalMine_Remote_Mag";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item2
-									{
-										name="SLAMDirectionalMine_Wire_Mag";
-										count=2;
-										ammoLeft=1;
-									};
-									class Item3
-									{
-										name="DemoCharge_Remote_Mag";
-										count=1;
-										ammoLeft=1;
-									};
-									class Item4
-									{
-										name="CUP_PipeBomb_M";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="MineDetector";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-							goggles="G_Combat";
-							hmd="NVGoggles";
-							headgear="H_HelmetSpecB";
-						};
-					};
-					id=7;
-					type="B_soldier_exp_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male11ENG";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.95999998;
-								};
-							};
-						};
-						nAttributes=2;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=6;
-		};
-		class Item5
+		class Item3
 		{
 			dataType="Trigger";
 			position[]={7753.8569,6.8047123,8062.042};
@@ -559,45 +183,379 @@ class Mission
 			type="EmptyDetectorAreaR50";
 			atlOffset=0.000415802;
 		};
+		class Item4
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7748.0571,10.68963,8141.1201};
+				angles[]={6.0745406,0,6.092226};
+			};
+			name="tsk_1";
+			id=13;
+			type="ModuleTaskCreate_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskCreate_F_Destination";
+					expression="_this setVariable ['Destination',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskCreate_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="attack";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleTaskCreate_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleTaskCreate_F_Marker";
+					expression="_this setVariable ['Marker',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleTaskCreate_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Destruction de batiment";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ModuleTaskCreate_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Détruire les 3 batiment énemis";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ModuleTaskCreate_F_ID";
+					expression="_this setVariable ['ID',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="tk_1";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="ModuleTaskCreate_F_AlwaysVisible";
+					expression="_this setVariable ['AlwaysVisible',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="ModuleTaskCreate_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=4;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="ModuleTaskCreate_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="CREATED";
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="ModuleTaskCreate_F_IDParent";
+					expression="_this setVariable ['IDParent',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="tk_1";
+						};
+					};
+				};
+				nAttributes=11;
+			};
+		};
+		class Item5
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7782.7534,4.7179408,8151.7334};
+				angles[]={6.2592568,0,6.1153975};
+			};
+			name="t_1";
+			id=14;
+			type="ModuleTaskSetState_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskSetState_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskSetState_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="SUCCEEDED";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
 		class Item6
 		{
-			dataType="Trigger";
-			position[]={7675.5122,45.689007,8180.4609};
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9809.7412,1,4199.2329};
+			};
+			side="Empty";
 			class Attributes
 			{
-				name="task3";
-				sizeA=14;
-				sizeB=18;
-				isRectangle=1;
 			};
-			id=9;
-			type="EmptyDetectorAreaR50";
+			id=35;
+			type="JDG_carrier_Spawner";
+			atlOffset=19.546242;
 		};
 		class Item7
 		{
-			dataType="Trigger";
-			position[]={7747.168,16.868193,8178.0449};
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9796.6006,17.40126,4171.9658};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=39;
+					type="B_Fighter_Pilot_F";
+					atlOffset=10.399822;
+				};
+			};
 			class Attributes
 			{
-				onActivation="""1"" objStatus ""DONE""; task1 setTaskState ""SUCCEEDED""; task1 = true; publicVariable ""task1""; ";
-				sizeA=0;
-				sizeB=0;
-				activationBy="WEST";
-				if (_task1 = true) then { hint "a is greater than b!"; };
 			};
-			id=12;
-			type="EmptyDetector";
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=1;
+				};
+				class Links
+				{
+					items=1;
+					class Item0
+					{
+						linkID=0;
+						item0=39;
+						item1=38;
+						class CustomData
+						{
+							role=1;
+						};
+					};
+				};
+			};
+			id=37;
+			atlOffset=36.945999;
+		};
+		class Item8
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9790.7715,19.89481,4158.1733};
+			};
+			side="West";
+			flags=2;
+			class Attributes
+			{
+				init="T = [Nimitz, this, 3] spawn ttt_fnc_planeStart;";
+			};
+			id=38;
+			type="B_Plane_Fighter_01_Stealth_F";
+			atlOffset=36.945999;
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=3;
+			nextID=5;
 		};
 		class Links
 		{
-			items=3;
+			items=5;
 			class Item0
 			{
 				linkID=0;
@@ -621,11 +579,31 @@ class Mission
 			class Item2
 			{
 				linkID=2;
-				item0=9;
-				item1=2;
+				item0=8;
+				item1=14;
 				class CustomData
 				{
-					type="TriggerOwner";
+					type="Sync";
+				};
+			};
+			class Item3
+			{
+				linkID=3;
+				item0=5;
+				item1=14;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item4
+			{
+				linkID=4;
+				item0=13;
+				item1=14;
+				class CustomData
+				{
+					type="Sync";
 				};
 			};
 		};
