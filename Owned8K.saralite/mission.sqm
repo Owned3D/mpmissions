@@ -6,9 +6,13 @@ class EditorData
 	scaleGridStep=1;
 	autoGroupingDist=10;
 	toggles=1025;
+	mods[]=
+	{
+		"3denEnhanced"
+	};
 	class ItemIDProvider
 	{
-		nextID=58;
+		nextID=113;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9804.8545,26.609653,4103.5928};
-		dir[]={0.098216258,-0.37280905,0.92270178};
-		up[]={0.039460864,0.92790794,0.37072027};
-		aside[]={0.99439049,2.0744119e-007,-0.10584658};
+		pos[]={9800.1758,42.399757,4092.5479};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -31,13 +35,18 @@ addons[]=
 	"JDG_carrier",
 	"A3_Characters_F_Jets",
 	"CUP_Misc3_Config",
-	"JS_JC_FA18"
+	"JS_JC_FA18",
+	"A3_Characters_F",
+	"CUP_Creatures_Military_Russia",
+	"A3_Static_F_AA_01",
+	"ace_realisticnames",
+	"CUP_Creatures_StaticWeapons"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=6;
+		items=10;
 		class Item0
 		{
 			className="CUP_CAStructures_Mil";
@@ -74,11 +83,36 @@ class AddonsMetaData
 			name="JS_JC_FA18";
 			author="F/A-18E/F Super Hornet Team";
 		};
+		class Item6
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item7
+		{
+			className="CUP_Creatures_Military_Russia";
+			name="CUP_Creatures_Military_Russia";
+		};
+		class Item8
+		{
+			className="A3_Static_F";
+			name="Arma 3 Alpha - Turrets";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item9
+		{
+			className="CUP_Creatures_StaticWeapons";
+			name="CUP_Creatures_StaticWeapons";
+		};
 	};
 };
 dlcs[]=
 {
-	"Jets"
+	"Jets",
+	"CUP_Units"
 };
 randomSeed=12082271;
 class ScenarioData
@@ -107,10 +141,34 @@ class Mission
 		forecastFogBase=-1000;
 		startFogDecay=0;
 		forecastFogDecay=0;
+		class CustomAttributes
+		{
+			name="Intel";
+			class Attribute0
+			{
+				property="ENH_viewDistance";
+				expression="if (!is3DEN && _value > 0 && hasInterface) then {setViewDistance _value}";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=10000;
+					};
+				};
+			};
+			nAttributes=1;
+		};
 	};
 	class Entities
 	{
-		items=11;
+		items=14;
 		class Item0
 		{
 			dataType="Object";
@@ -647,18 +705,195 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={9814.8721,19.715017,4136.188};
+				position[]={9800.1904,19.714764,4117.8779};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				reportRemoteTargets=1;
 				receiveRemoteTargets=1;
 				reportOwnPosition=1;
+				pylons="PylonMissile_Missile_BIM9X_x1;PylonMissile_Missile_BIM9X_x1;PylonMissile_Bomb_GBU12_x1;PylonMissile_Bomb_GBU12_x1;PylonRack_Bomb_GBU12_x2;PylonRack_Bomb_GBU12_x2;PylonRack_Bomb_GBU12_x2;PylonRack_Bomb_GBU12_x2;PylonRack_Missile_AMRAAM_D_x1;js_m_fa18_atflir;js_m_fa18_wing_tank_x1;js_jc_120Rnd_CMChaff_Magazine;js_jc_120Rnd_CMFlare_Magazine;";
 			};
-			id=56;
-			type="JS_JC_FA18E";
+			id=62;
+			type="JS_JC_FA18F";
+			atlOffset=10.399757;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="js_jc_fa18_foldWings";
+					expression="[_this, _value] execVM 'js_jc_fa18\scripts\init\wing_fold.sqf';";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="js_jc_fa18_complexStartup";
+					expression="_this setVariable ['js_jc_fa18_complexStartup', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ttt_servicemenu";
+					expression="_this setVariable ['ServiceMenu', _value]; if (!_value) then { _this animate ['service_menu_switch', 1, true]; };";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item11
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8667.1084,5.8926492,6196.0181};
+						angles[]={0.016565811,1.1511734,6.2666197};
+					};
+					side="East";
+					flags=2;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=110;
+					type="O_Soldier_F";
+					atlOffset=0.98350286;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8670.7207,6.5228877,6205.3145};
+						angles[]={0.029448107,1.3663062,6.1677127};
+					};
+					side="East";
+					class Attributes
+					{
+					};
+					id=112;
+					type="CUP_O_RU_Soldier";
+					atlOffset=1.9671464;
+				};
+			};
+			class Attributes
+			{
+			};
+			class CrewLinks
+			{
+				class LinkIDProvider
+				{
+					nextID=2;
+				};
+				class Links
+				{
+					items=2;
+					class Item0
+					{
+						linkID=0;
+						item0=110;
+						item1=109;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+					class Item1
+					{
+						linkID=1;
+						item0=112;
+						item1=111;
+						class CustomData
+						{
+							role=2;
+							turretPath[]={0};
+						};
+					};
+				};
+			};
+			id=108;
+			atlOffset=-1.7166138e-005;
+		};
+		class Item12
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8667.1084,5.8912101,6195.9683};
+				angles[]={0.016565811,1.1511734,6.2666197};
+			};
+			side="East";
+			flags=6;
+			class Attributes
+			{
+			};
+			id=109;
+			type="O_static_AA_F";
+			atlOffset=-1.7166138e-005;
+		};
+		class Item13
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8670.7207,6.5214486,6205.2646};
+				angles[]={0.029448107,1.3663062,6.1677127};
+			};
+			side="East";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=111;
+			type="CUP_O_ZU23_RU";
+			atlOffset=0.00010442734;
 		};
 	};
 	class Connections
