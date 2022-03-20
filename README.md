@@ -13,3 +13,5 @@ Addon used
 - CUP ACE 3 Compatibility Addon-Terrain https://steamcommunity.com/sharedfiles/filedetails/?id=1375890861
 - CUP ACE 3 Compatibility Addon-Weapons https://steamcommunity.com/sharedfiles/filedetails/?id=549676314
 - CUP Vehicles https://steamcommunity.com/sharedfiles/filedetails/?id=541888371
+- FA-18 Super Hornet https://steamcommunity.com/sharedfiles/filedetails/?id=743099837
+- USS Nimitz https://steamcommunity.com/sharedfiles/filedetails/?id=643530417
