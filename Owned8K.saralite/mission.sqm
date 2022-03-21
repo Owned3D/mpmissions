@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=155;
+		nextID=159;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9810.5,39.205845,4089.6033};
-		dir[]={0.78789854,-0.58234066,-0.20023853};
-		up[]={0.56439912,0.81294489,-0.14343782};
-		aside[]={-0.24631256,0,-0.9691906};
+		pos[]={9824.2588,68.935394,4174.54};
+		dir[]={0.20684862,-0.4987973,-0.84168917};
+		up[]={0.11903717,0.86671972,-0.48437834};
+		aside[]={-0.97111595,3.4752884e-007,-0.23865612};
 	};
 };
 binarizationWanted=0;
@@ -48,13 +48,14 @@ addons[]=
 	"CUP_Misc3_Config",
 	"A3_Ui_F",
 	"JS_JC_FA18",
-	"A3_Air_F_Jets_Plane_Fighter_01"
+	"A3_Air_F_Jets_Plane_Fighter_01",
+	"rksla3_aircraft_tug"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=16;
+		items=17;
 		class Item0
 		{
 			className="CUP_CAStructures_Mil";
@@ -161,6 +162,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item16
+		{
+			className="rksla3_aircraft_tug";
+			name="MX50 Aircraft Tug";
+			author="RKSL_Studios";
+			url="http://www.rkslstudios.info/";
+		};
 	};
 };
 dlcs[]=
@@ -221,7 +229,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=24;
+		items=25;
 		class Item0
 		{
 			dataType="Object";
@@ -856,7 +864,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9832.3535,19.715015,4068.283};
-				angles[]={-0,4.8534875,0};
+				angles[]={0,4.8534875,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1241,7 +1249,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9804.3662,9.3176842,4272.8975};
-				angles[]={0,3.1381004,-0};
+				angles[]={0,3.1381004,0};
 			};
 			side="Empty";
 			class Attributes
@@ -1404,7 +1412,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9819.1729,9.33992,4237.3789};
-				angles[]={-0,3.7263248,0};
+				angles[]={0,3.7263248,0};
 			};
 			side="Empty";
 			class Attributes
@@ -1567,7 +1575,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9802.8066,9.3150053,4227.3159};
-				angles[]={-0,2.3688064,0};
+				angles[]={0,2.3688064,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1730,7 +1738,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9801.4033,9.3150053,4209.0146};
-				angles[]={-0,2.4159238,0};
+				angles[]={0,2.4159238,0};
 			};
 			side="Empty";
 			flags=4;
@@ -1893,7 +1901,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9802.8643,9.3150063,4187.1548};
-				angles[]={-0,2.1091616,0};
+				angles[]={0,2.1091616,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2057,7 +2065,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9812.2422,9.5950508,4084.187};
-				angles[]={-0,1.2461993,0};
+				angles[]={0,1.2461993,0};
 			};
 			side="Empty";
 			class Attributes
@@ -2190,7 +2198,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9803.0596,9.4950504,4157.5625};
-				angles[]={-0,1.0928094,0};
+				angles[]={0,1.0928094,0};
 			};
 			side="Empty";
 			class Attributes
@@ -2323,7 +2331,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9803.3213,9.4950504,4137.0737};
-				angles[]={-0,2.4240556,0};
+				angles[]={0,2.4240556,0};
 			};
 			side="Empty";
 			class Attributes
@@ -2456,7 +2464,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9802.3545,9.4950514,4112.2505};
-				angles[]={-0,2.3064213,0};
+				angles[]={0,2.3064213,0};
 			};
 			side="Empty";
 			flags=4;
@@ -2803,6 +2811,45 @@ class Mission
 					};
 				};
 				nAttributes=4;
+			};
+		};
+		class Item24
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={9817.5898,7.3707371,4159.7275};
+			};
+			side="Empty";
+			class Attributes
+			{
+				lock="UNLOCKED";
+			};
+			id=158;
+			type="rksla3_aircraft_tug_blufor";
+			atlOffset=0.35775852;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[3]],[[""SmokeShell"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellBlue""],[4,4,4,4]],[[],[]],[[],[]]],false]";
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};
